@@ -30,6 +30,21 @@ public class ApiTests {
                 assertThat().statusCode(200).
                 body("book.size()", greaterThan(0)).
                 body("book.id", everyItem(notNullValue())).
+                body("book.name", everyItem(notNullValue())).
+                body("book.type", everyItem(notNullValue())).
+                body("book.available", everyItem(notNullValue())).
         log().body();
+    }
+
+    @Test
+    public void getSingleBook() {
+        int bookId = 5;
+        String endpoint = "https://simple-books-api.glitch.me/books/" + bookId;
+        given().
+                when().
+                get(endpoint).
+                then().
+                assertThat().statusCode(200).
+                log().body();
     }
 }

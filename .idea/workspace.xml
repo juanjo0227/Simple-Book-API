@@ -7,6 +7,7 @@
     <list default="true" id="442f6ff5-22ac-4dc6-b3b4-6ac901cdbd22" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testingBooks/ApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testingBooks/ApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testingBooks/ApiTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testingBooks/ApiTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
     "last_opened_file_path": "/Users/juanjoserodriguezduque/Documents/proyectos/Simple-Book-API/Simple-Book-API"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ApiTests.getListOfBooks">
+  <component name="RunManager" selected="JUnit.ApiTests.getSingleBook">
     <configuration name="ApiTests.getListOfBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Simple-Book-API" />
       <extension name="coverage">
@@ -57,6 +58,22 @@
       <option name="PACKAGE_NAME" value="testingBooks" />
       <option name="MAIN_CLASS_NAME" value="testingBooks.ApiTests" />
       <option name="METHOD_NAME" value="getListOfBooks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTests.getSingleBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Simple-Book-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testingBooks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testingBooks" />
+      <option name="MAIN_CLASS_NAME" value="testingBooks.ApiTests" />
+      <option name="METHOD_NAME" value="getSingleBook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTests.getSingleBook" />
         <item itemvalue="JUnit.ApiTests.getListOfBooks" />
         <item itemvalue="JUnit.ApiTests.getStatus" />
       </list>
