@@ -1,9 +1,9 @@
 package testingBooks;
 
-
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 public class ApiTests {
@@ -47,4 +47,19 @@ public class ApiTests {
                 assertThat().statusCode(200).
                 log().body();
     }
+
+    @Test
+    public void registerAPIClient() {
+        String endpoint = "https://simple-books-api.glitch.me/api-clients/";
+        String body = """
+                {
+                    "clientName": "John",
+                    "clientEmail": "{{$randomEmail}}"
+                }
+                """;
+
+       given().body(body).when().post(endpoint).then().assertThat().statusCode(201);
+
+    }
+
 }
